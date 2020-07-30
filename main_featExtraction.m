@@ -34,7 +34,7 @@ featStats = zeros(size(A,1), 75*8);
 %%
 
 
-for i =  9:size(A,1)
+for i =  1:size(A,1)
     
     disp(['reading study - ' num2str(A(i,1))]);
     
