@@ -137,8 +137,8 @@ f_sort = indx;
 %retrain and test classifiers
 
 frequentF = f_sort(1:round(0.1*size(featsAvgN,1)));
-trainData = featsAvgN(:,f_sort);
-testData = featsAvgNT(:,f_sort);
+trainData = featsAvgN(:,frequentF);
+testData = featsAvgNT(:,frequentF);
 
 switch classifierID
     case 1 % linear regression classifier
